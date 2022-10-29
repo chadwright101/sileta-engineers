@@ -1,0 +1,49 @@
+@use "../abstracts" as *;
+@use "../base" as *;
+@use "../components" as *;
+
+@layer utilities {
+  .fade {
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.6;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  ul {
+    li:first-child {
+      width: 100%;
+    }
+  }
+
+  @include mqLarge {
+    .home {
+      display: grid;
+      grid-template-columns: 1fr 22rem;
+      column-gap: 4rem;
+
+      &__paragraph {
+        grid-column: 1;
+        p {
+          text-align: justify;
+        }
+      }
+
+      &__image {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+
+        img {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

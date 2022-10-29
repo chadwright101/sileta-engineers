@@ -1,7 +1,37 @@
-extends ./assets/layout/app
+extends layout/app
 
 append variables
     - pageTitle = 'Contact'
 
 block main
+
+    section
+        include layout/page-header
     
+    main.page-width.left-text
+        div.contact
+            p Are you looking for an Engineer to itemise your project into manageable milestones?<br><br>Would you like guidance on deployment of technology or to assess return on investment thereof?<br><br>Contact our head office for a no-fuss, no obligation chat. An engineer will be able to discuss prices and options to meet your requirements.
+            div.line-full
+            div(class="lg:flex lg:justify-between lg:gap-x-8")
+                div.flex.justify-center.gap-8
+                    ul.w-56
+                        li 
+                            h2 Email:
+                        li 
+                            h2 Phone:
+                        li 
+                            h2 Physical address:
+                        li 
+                            h2 Postal address:
+                    ul.w-full
+                        li
+                            button(onclick="showEmailContact()")
+                                h2(class="hover:text-siletaGreen").font-normal.text-blue-500.italic#showEmailContact Show Email
+                        li
+                            a(href="tel: +27124358002")
+                                h2.font-normal +27 12 435 8002 (head office)
+                        li
+                            h2.font-normal 254 Shelanti Avenue, Centurion, 0157, Pretoria
+                        li
+                            h2.font-normal PO Box 12291, Die Hoewes x2, 0163, Gauteng
+                img.w-72.mt-8.mx-auto(class="md:hidden lg:block lg:mt:0 lg:mx-0 lg:mr-8" src="../assets/images/icons/phone-green-large.svg", alt="Green phone icon")

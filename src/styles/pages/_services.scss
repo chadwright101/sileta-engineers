@@ -1,0 +1,12 @@
+@use "../abstracts" as *;
+@use "../base" as *;
+@use "../components" as *;
+
+@layer utilities {
+  .services__grid {
+    @include mqLarge {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

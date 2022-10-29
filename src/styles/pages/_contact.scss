@@ -1,0 +1,18 @@
+@use "../abstracts" as *;
+@use "../base" as *;
+@use "../components" as *;
+
+@layer utilities {
+  .contact {
+    li,
+    h2,
+    button,
+    a {
+      text-align: left;
+    }
+    ul {
+      display: grid;
+      gap: 1rem;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+@use "../abstracts" as *;
+@use "./fonts" as *;
+
+@layer components {
+  body {
+    font-family: "Advent Pro", sans-serif;
+    @apply text-siletaBlack;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li,
+  a {
+    letter-spacing: 0.0275em;
+    text-align: center;
+  }
+
+  .left-text {
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    li,
+    a {
+      @include mqMedium {
+        text-align: left;
+      }
+    }
+  }
+
+  h1 {
+    @apply text-siletaPageheading font-medium text-center;
+  }
+
+  h2 {
+    @apply text-siletaMedium font-medium mb-4;
+  }
+
+  h3 {
+    @apply text-4xl font-bold text-siletaGreen;
+  }
+
+  h4 {
+    @apply text-siletaLarge font-semibold;
+  }
+
+  p,
+  li,
+  h5 {
+    @apply text-siletaBody;
+  }
+
+  a:hover {
+    @apply text-siletaGreen;
+  }
+
+  .page-width {
+    padding: 0 2rem;
+
+    @include mqMedium {
+      padding: 0 4rem;
+    }
+
+    @include mqLarge {
+      padding: 0 12rem;
+    }
+  }
+
+  .line-25 {
+    @apply w-1/4 h-px bg-siletaBlack my-12 mx-auto md:mx-0;
+  }
+
+  .line-50 {
+    @apply w-1/2 h-px bg-siletaBlack my-12 mx-auto md:mx-0;
+  }
+
+  .line-75 {
+    @apply w-3/4 h-px bg-siletaBlack my-12 mx-auto;
+
+    @include mqMedium {
+      @apply mx-0;
+    }
+  }
+
+  .line-full {
+    @apply w-full h-px bg-siletaBlack my-12 mx-auto;
+  }
+}

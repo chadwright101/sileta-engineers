@@ -1,7 +1,54 @@
-extends ./assets/layout/app
+extends layout/app
 
 append variables
     - pageTitle = 'Portfolio'
 
 block main
+    section
+        include layout/page-header
     
+    main.portfolio.page-width.flex.flex-wrap.justify-center
+        div.portfolio__grid
+            h2 > Civil & Structural Engineering
+            div
+                p
+                    strong Project Title
+                ul
+                    li Mathole High School
+                    li LA Building & Admin Building Complex
+            div
+                p
+                    strong User/Client
+                ul
+                    li Department of Education
+                    li Department of Works
+            div.line-25.col-span-full
+        div.portfolio__grid
+            h2 > Electrical Engineering
+            div
+                p
+                    strong Project Title
+                ul
+                    li LA Building & Admin Building Complex
+            div
+                p
+                    strong User/Client
+                ul
+                    li Department of Works
+            div.line-25.col-span-full
+        div.portfolio__grid
+            h2 > Mechanical Engineering
+            div
+                p
+                    strong Project Title
+                ul
+                    li Nkandla Hospital: Pharmacies
+                    li St Maries Hospital: Pharmacies
+                    li LA Building & Admin Building Complex
+            div
+                p
+                    strong User/Client
+                ul
+                    li.portfolio__grid--spacing-1 Department of Health
+                    li.portfolio__grid--spacing-2 Department of Health
+                    li.portfolio__grid--spacing-3 Department of Works

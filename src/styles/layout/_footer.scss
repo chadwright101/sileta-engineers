@@ -1,0 +1,14 @@
+@use "../abstracts" as *;
+@use "../base" as *;
+@use "../components" as *;
+
+@layer components {
+  .footer-translate {
+    @include mqMedium {
+      translate: 0 -28.2px;
+      li {
+        margin-top: 18.1px;
+      }
+    }
+  }
+}

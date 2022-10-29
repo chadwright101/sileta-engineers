@@ -1,18 +1,17 @@
-// Mobile navigation menu
-function mobileNav(x, y) {
-  x = document.getElementById("mobileNav");
-  y = document.getElementById("navButton");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-    y.style.boxShadow =
-      "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)";
+// Mobile navigation
+function mobileNav() {
+  navBar = document.getElementById("mobileNav");
+  button = document.getElementById("navButton");
+  if (navBar.style.display === "none") {
+    navBar.style.display = "block";
+    button.style.backgroundColor = "rgba(50, 94, 104, 0.35)";
   } else {
-    x.style.display = "none";
-    y.style.boxShadow = "none";
+    navBar.style.display = "none";
+    button.style.backgroundColor = "rgba(50, 94, 104, 0.5)";
   }
 }
 
-// Home page slideshow
+//  Home slideshow
 let slideIndex = 0;
 showSlides();
 
@@ -30,6 +29,13 @@ function showSlides() {
 
   slides[slideIndex - 1].style.display = "block";
   setTimeout(showSlides, 5000);
+}
+
+// Contact show email
+function showEmailContact(x) {
+  x = document.getElementById("showEmailContact");
+  x.innerHTML =
+    '<a href="mailto:info@sileta.co.za" class="py-2"><h2 class="font-normal not-italic text-siletaBlack hover:text-siletaGreen">info@sileta.co.za</h2></a>';
 }
 
 // Footer show email
