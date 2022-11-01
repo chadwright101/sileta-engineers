@@ -4,10 +4,8 @@ function mobileNav() {
   button = document.getElementById("navButton");
   if (navBar.style.display === "none") {
     navBar.style.display = "block";
-    button.style.backgroundColor = "rgba(50, 94, 104, 0.35)";
   } else {
     navBar.style.display = "none";
-    button.style.backgroundColor = "rgba(50, 94, 104, 0.5)";
   }
 }
 
@@ -42,5 +40,5 @@ function showEmailContact(x) {
 function showEmail(x) {
   x = document.getElementById("showEmail");
   x.innerHTML =
-    '<a href="mailto:info@sileta.co.za" class="text-siletaMedium py-2 px-16">info@sileta.co.za</a>';
+    '<a href="mailto:info@sileta.co.za" class="text-siletaMedium py-2 px-16 lg:text-siletaBody lg:py-0 lg:px-0">info@sileta.co.za</a>';
 }

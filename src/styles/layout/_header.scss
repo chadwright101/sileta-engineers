@@ -7,4 +7,38 @@
     top: 185px;
     z-index: 1;
   }
+
+  .header {
+    @include mqMedium {
+      display: grid;
+      grid-template-columns: 1fr 6rem;
+      padding: 0 2rem;
+      border-bottom: solid 1px rgba(25, 25, 25, 0.35);
+
+      button {
+        height: 100%;
+        border-left: solid 1px rgba(25, 25, 25, 0.35);
+        background-color: transparent;
+        img {
+          margin-left: 2.5rem;
+        }
+      }
+      #mobileNav {
+        top: 115px;
+        left: 0rem;
+        border-top: solid 1px rgba(25, 25, 25, 0.5);
+      }
+    }
+    @include mqLarge {
+      grid-template-columns: 24rem 29rem;
+      column-gap: 10rem;
+      justify-content: space-between;
+      padding: 0 5rem;
+
+      .desktop-list {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
+  }
 }

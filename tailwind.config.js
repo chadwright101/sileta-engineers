@@ -19,6 +19,9 @@ module.exports = {
         siletaXL: "2.313rem",
         siletaXXL: "3.563rem",
       },
+      height: {
+        128: "32rem",
+      },
     },
   },
   plugins: [],

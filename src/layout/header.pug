@@ -1,12 +1,25 @@
 header
-    nav.flex.flex-col.items-center.gap-2
+    nav.header.flex.flex-col.items-center.gap-2
         a(href="index.pug") 
             img.w-96.py-6(src="../assets/images/logo.png", alt="Sileta Engineers Logo")
-        button.bg-siletaLightgreen.w-full#navButton(onclick="mobileNav()")
-            img#menuIcon.mx-auto.py-2(src="../assets/images/icons/menu.svg", alt="Menu icon")
+        button.bg-siletaLightgreen.w-full#navButton(class="lg:hidden" onclick="mobileNav()")
+            img.mx-auto.py-2(src="../assets/images/icons/menu.svg", alt="Menu icon")
         div.absolute.w-full.bg-white.shadow-md.hidden#mobileNav
             ul
             each link, title in navList
                 li.list-none.my-8
                     a.text-siletaMedium.py-4.px-16(href= link)= title
+        div(class="hidden lg:block")
+            ul.desktop-list
+                li 
+                    a(href="index.pug") Home
+                li 
+                    a(href="company.pug") Company
+                li 
+                    a(href="services.pug") Services
+                li 
+                    a(href="portfolio.pug") Portfolio 
+                li 
+                    a(href="contact.pug") Contact
+
         

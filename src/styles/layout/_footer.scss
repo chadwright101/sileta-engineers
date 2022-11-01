@@ -10,5 +10,11 @@
         margin-top: 18.1px;
       }
     }
+    @include mqLarge {
+      translate: 0px -4.75px;
+      li {
+        margin-top: 7.5px;
+      }
+    }
   }
 }
