@@ -3,10 +3,68 @@
 @use "../components" as *;
 
 @layer utilities {
-  .services__grid {
-    @include mqLarge {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+  @include mqLarge {
+    .services {
+      width: 1100px;
+      margin: 0 auto;
+
+      &__img {
+        max-width: 55rem;
+        translate: -70px -25px;
+      }
+
+      &__container {
+        position: absolute;
+        translate: -75px -770px;
+      }
+      &__heading {
+        translate: 240px 500px;
+      }
+
+      &__grid {
+        width: 900px;
+        height: 600px;
+      }
+
+      &__engineering--heading,
+      &__management--heading,
+      &__case--heading,
+      &__shared--heading {
+        width: 14rem;
+        text-align: center;
+      }
+
+      &__engineering {
+        &--heading {
+          translate: 290px 48px;
+        }
+        &--list {
+          translate: -685px -57px;
+          gap: 0.6rem;
+
+          p {
+            text-align: right;
+          }
+        }
+      }
+
+      &__management {
+        &--heading {
+          translate: 368px -43px;
+        }
+        &--list {
+          translate: 663px -148px;
+          gap: 1.5rem;
+        }
+      }
+
+      &__case--heading {
+        translate: 5px -23px;
+      }
+
+      &__shared--heading {
+        translate: 693px -127px;
+      }
     }
   }
 }

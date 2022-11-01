@@ -8,36 +8,37 @@ block main
         include layout/page-header
     div.line-25(class="md:hidden")
 
-    section.page-width.left-text
-        h3.mb-12.mt-12.underline.underline-offset-8 Sileta Services
-        ul.services__grid
-            li.mb-12
-                h4.mb-4 Engineering Consulting
-                ul.flex.flex-col.gap-2
-                    li
-                        p.text-xl Structural
-                    li
-                        p.text-xl Civil
-                    li 
-                        p.text-xl Mechanical
-                    li
-                        p.text-xl Electrical
-            li.mb-12
-                h4.mb-4 Management Consulting
-                ul.flex.flex-col.gap-2 
-                    li
-                        p.text-xl Structural
-                    li
-                        p.text-xl Project management
-                    li 
-                        p.text-xl Programme management
-                    li
-                        p.text-xl Portfolio management
-            li.mb-12
-                h4 Case Management
-            li
-                h4 Shared ICT Infrastructure
-        div.line-full
+    section.page-width.services
+        div
+            img.hidden.services__img(class="xl:block")(src="../assets/images/services/Services diagram redone-new.jpg", alt="Background image of Sileta's logo")
+        div.services__container
+            h3.mb-12.mt-12.underline.underline-offset-8.services__heading(class="md:text-left xl:no-underline xl:text-siletaXXL") Sileta Services
+            ul.services__grid
+                li.mb-12.services__engineering
+                    h4.mb-4.services__engineering--heading(class="md:text-left xl:text-siletaXL") Engineering Consulting
+                    ul.flex.flex-col.gap-2.services__engineering--list
+                        li
+                            p.text-xl(class="md:text-left xl:text-siletaLarge") Structural
+                        li
+                            p.text-xl(class="md:text-left xl:text-siletaLarge") Civil
+                        li 
+                            p.text-xl(class="md:text-left xl:text-siletaLarge") Mechanical
+                        li
+                            p.text-xl(class="md:text-left xl:text-siletaLarge") Electrical
+                li.mb-12.services__management
+                    h4.mb-4.services__management--heading(class="md:text-left xl:text-siletaXL") Management Consulting
+                    ul.flex.flex-col.gap-2.services__management--list 
+                        li
+                            p.text-xl(class="md:text-left xl:text-siletaLarge") Project management
+                        li 
+                            p.text-xl(class="md:text-left xl:text-siletaLarge") Programme management
+                        li
+                            p.text-xl(class="md:text-left xl:text-siletaLarge") Portfolio management
+                li.mb-12
+                    h4.services__case--heading(class="md:text-left xl:text-siletaXL") Case Management
+                li
+                    h4.services__shared--heading(class="md:text-left xl:text-siletaXL") Shared ICT Infrastructure
+            div.line-full(class="xl:hidden")
     main.page-width.left-text
         div
             h2 > Engineering Consulting

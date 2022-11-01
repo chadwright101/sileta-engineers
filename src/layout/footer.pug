@@ -1,20 +1,20 @@
 nav
-    div.w-full.bg-siletaLightgreen.flex.flex-col.py-8.mt-12.items-center(class="md:flex-row md:justify-around lg:gap-x-16 lg:items-start lg:px-48  lg:justify-start")
-        div.flex.flex-col.items-center(class="lg:items-start")
+    div.w-full.bg-siletaLightgreen.flex.flex-col.py-8.mt-12.items-center(class="md:flex-row md:justify-around xl:gap-x-16 xl:items-start xl:px-48  xl:justify-start")
+        div.flex.flex-col.items-center(class="xl:items-start")
             h2.underline.underline-offset-4 Navigation 
             ul
             each link, title in navList 
-                li.list-none.mt-4(class="lg:mt-0")
-                    a.py-2.px-16.text-siletaMedium(href= link)(class="lg:py-0 lg:px-0 lg:text-siletaBody")= title
+                li.list-none.mt-4(class="xl:mt-0")
+                    a.py-2.px-16.text-siletaMedium(href= link)(class="xl:py-0 xl:px-0 xl:text-siletaBody")= title
         div.line-25.my-6(class="md:hidden")
-        ul.flex.flex-col.items-center.footer-translate(class="lg:items-start")
+        ul.flex.flex-col.items-center.footer-translate(class="xl:items-start")
             li.contact-list-1
-                h2.underline.underline-offset-4(class="lg:text-left") Contact
+                h2.underline.underline-offset-4(class="xl:text-left") Contact
             li
-                p.text-siletaMedium(class="lg:text-siletaBody") Tel:
+                p.text-siletaMedium(class="xl:text-siletaBody") Tel:
             li
-                a.text-siletaMedium.py-2.px-16(href="tel:+27124358002")(class="lg:py-0 lg:px-0 lg:text-siletaBody") +27 12 435 8002
+                a.text-siletaMedium.py-2.px-16(href="tel:+27124358002")(class="xl:py-0 xl:px-0 xl:text-siletaBody") +27 12 435 8002
             li.mt-8
-                p.text-siletaMedium(class="lg:text-siletaBody") Email:
+                p.text-siletaMedium(class="xl:text-siletaBody") Email:
             li
-                button.text-siletaMedium#showEmail(onclick="showEmail()" class="hover:text-siletaGreen lg:text-siletaBody") <em>Show email</em>
+                button.text-siletaMedium#showEmail(onclick="showEmail()" class="hover:text-siletaGreen xl:text-siletaBody") <em>Show email</em>

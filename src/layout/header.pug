@@ -2,14 +2,14 @@ header
     nav.header.flex.flex-col.items-center.gap-2
         a(href="index.pug") 
             img.w-96.py-6(src="../assets/images/logo.png", alt="Sileta Engineers Logo")
-        button.bg-siletaLightgreen.w-full#navButton(class="lg:hidden" onclick="mobileNav()")
+        button.bg-siletaLightgreen.w-full#navButton(class="xl:hidden" onclick="mobileNav()")
             img.mx-auto.py-2(src="../assets/images/icons/menu.svg", alt="Menu icon")
         div.absolute.w-full.bg-white.shadow-md.hidden#mobileNav
             ul
             each link, title in navList
                 li.list-none.my-8
                     a.text-siletaMedium.py-4.px-16(href= link)= title
-        div(class="hidden lg:block")
+        div(class="hidden xl:block")
             ul.desktop-list
                 li 
                     a(href="index.pug") Home

@@ -40,5 +40,5 @@ function showEmailContact(x) {
 function showEmail(x) {
   x = document.getElementById("showEmail");
   x.innerHTML =
-    '<a href="mailto:info@sileta.co.za" class="text-siletaMedium py-2 px-16 lg:text-siletaBody lg:py-0 lg:px-0">info@sileta.co.za</a>';
+    '<a href="mailto:info@sileta.co.za" class="text-siletaMedium py-2 px-16 xl:text-siletaBody xl:py-0 xl:px-0">info@sileta.co.za</a>';
 }
