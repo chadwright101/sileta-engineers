@@ -4,11 +4,13 @@ html(lang="en")
     block variables
         include ../data/variables
         
-    head
+    block head
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title #{pageTitle}
+        <meta name="description" content="#{busName} | We are a team of talented engineers who have a vast amount of experience with the sole intention of doing things differently.">
+        <link rel="shortcut icon" href="../assets/images/favicon.ico">
         link(rel="stylesheet", href="styles/main.scss")
 
     body

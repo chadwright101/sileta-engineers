@@ -1,7 +1,10 @@
 extends layout/app
 
+prepend head 
+    - let pageTitle = `Contact - ${busName}`
+
 append variables
-    - pageTitle = 'Contact'
+    - pageName = 'Contact'
 
 block main
 
