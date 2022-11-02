@@ -1,7 +1,15 @@
 header
+    div.hidden.top-header(class="xl:block xl:flex xl:gap-4 xl:py-2 xl:items-center xl:justify-end xl:pr-24")
+        div.flex.gap-2.items-center
+            img.h-4(src="../assets/images/icons/phone-grey.svg", alt="Phone call icon")
+            button#showEmailHeader(onclick="showEmailHeader()")
+                em Show Email
+        div.flex.gap-2.items-center
+            img.h-4(src="../assets/images/icons/email-grey.svg", alt="Phone call icon")
+            a(href="tel:+27124358002") +27 12 435 8002
     nav.header.flex.flex-col.items-center.gap-2
         a(href="index.pug") 
-            img.w-96.py-6(src="../assets/images/logo.png", alt="Sileta Engineers Logo")
+            img.w-96.py-6.px-4(src="../assets/images/logo.png", alt="Sileta Engineers Logo")
         button.bg-siletaLightgreen.w-full#navButton(class="xl:hidden" onclick="mobileNav()")
             img.mx-auto.py-2(src="../assets/images/icons/menu.svg", alt="Menu icon")
         div.absolute.w-full.bg-white.shadow-md.hidden#mobileNav

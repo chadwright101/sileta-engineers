@@ -1,3 +1,9 @@
+// Header show email
+function showEmailHeader() {
+  x = document.getElementById("showEmailHeader");
+  x.innerHTML = '<a href="mailto:info@sileta.co.za">info@sileta.co.za</a>';
+}
+
 // Mobile navigation
 function mobileNav() {
   navBar = document.getElementById("mobileNav");
