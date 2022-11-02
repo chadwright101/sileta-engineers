@@ -9,7 +9,7 @@
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
-      column-gap: 2rem;
+      gap: 2rem;
       @include mqMedium {
         width: 40rem;
       }
