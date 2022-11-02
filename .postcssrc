@@ -1,11 +1,12 @@
 {
   "plugins": {
     "tailwindcss": {},
-    "postcss-sort-media-queries": {},
-    "compressors": {
-      "*.{html,css,js,svg,map}": [
-        "@parcel/compressor-brotli"
-      ]
-    }
+    "postcss-sort-media-queries": {}
+  },
+  "compressors": {
+    "*.{html,css,js,svg,map}": [
+      "@parcel/compressor-gzip",
+      "@parcel/compressor-brotli"
+    ]
   }
 }
