@@ -11,6 +11,7 @@
   "license": "ISC",
   "devDependencies": {
     "@parcel/compressor-brotli": "^2.7.0",
+    "@parcel/packager-svg": "^2.7.0",
     "@parcel/transformer-pug": "^2.7.0",
     "@parcel/transformer-sass": "^2.7.0",
     "parcel": "^2.7.0",
@@ -19,6 +20,7 @@
     "pug": "^3.0.2",
     "pug-cli": "^1.0.0-alpha6",
     "sass": "^1.55.0",
+    "sharp": "^0.29.3",
     "tailwindcss": "^3.1.8"
   }
 }
