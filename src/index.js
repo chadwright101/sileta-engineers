@@ -5,6 +5,7 @@ function showEmailHeader() {
 }
 
 // Mobile navigation
+mobileNav();
 function mobileNav() {
   navBar = document.getElementById("mobileNav");
   button = document.getElementById("navButton");
