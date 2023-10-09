@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "dev": "parcel src/index.pug --open",
-    "build": "parcel build src/index.pug --no-source-maps --dist-dir public"
+    "build": "parcel build src/index.pug --no-source-maps --dist-dir hello"
   },
   "keywords": [],
   "author": "",
