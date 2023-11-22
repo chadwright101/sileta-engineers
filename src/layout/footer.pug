@@ -5,7 +5,7 @@ nav
             ul
             each link, title in navList 
                 li.list-none.mt-4(class="xl:mt-0")
-                    a.py-2.px-16.text-siletaMedium(href= link)(class="xl:py-0 xl:px-0 xl:text-siletaBody")= title
+                    a.py-2.px-16.text-siletaMedium(href=link, class="xl:py-0 xl:px-0 xl:text-siletaBody")= title
         div.line-25.my-6(class="md:hidden")
         ul.flex.flex-col.items-center.footer-translate(class="xl:items-start")
             li
@@ -13,7 +13,7 @@ nav
             li.mt-4
                 p.text-siletaMedium(class="xl:text-siletaBody") Tel:
             li.mt-2
-                a.text-siletaMedium.py-2.px-16(href="tel:+27136631328")(class="xl:py-0 xl:px-0 xl:text-siletaBody") +27 13 663 1328
+                a.text-siletaMedium.py-2.px-16(href="tel:+27136631328", class="xl:py-0 xl:px-0 xl:text-siletaBody") +27 13 663 1328
             li.mt-8
                 p.text-siletaMedium(class="xl:text-siletaBody") Email:
             li.mt-2
