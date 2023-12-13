@@ -16,7 +16,7 @@
     "@parcel/transformer-sass": "^2.7.0",
     "parcel": "^2.7.0",
     "postcss": "^8.4.17",
-    "postcss-sort-media-queries": "^4.3.0",
+    "postcss-sort-media-queries": "^5.2.0",
     "pug": "^3.0.2",
     "pug-cli": "^1.0.0-alpha6",
     "sass": "^1.55.0",
