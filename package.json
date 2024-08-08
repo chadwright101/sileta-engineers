@@ -10,17 +10,17 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@parcel/compressor-brotli": "^2.7.0",
-    "@parcel/packager-svg": "^2.7.0",
-    "@parcel/transformer-pug": "^2.7.0",
-    "@parcel/transformer-sass": "^2.7.0",
-    "parcel": "^2.7.0",
-    "postcss": "^8.4.17",
-    "postcss-sort-media-queries": "^4.3.0",
-    "pug": "^3.0.2",
+    "@parcel/compressor-brotli": "^2.12.0",
+    "@parcel/packager-svg": "^2.12.0",
+    "@parcel/transformer-pug": "^2.12.0",
+    "@parcel/transformer-sass": "^2.12.0",
+    "parcel": "^2.12.0",
+    "postcss": "^8.4.41",
+    "postcss-sort-media-queries": "^5.2.0",
+    "pug": "^3.0.3",
     "pug-cli": "^1.0.0-alpha6",
-    "sass": "^1.55.0",
-    "sharp": "^0.33.1",
-    "tailwindcss": "^3.1.8"
+    "sass": "^1.77.8",
+    "sharp": "^0.31.1",
+    "tailwindcss": "^3.4.8"
   }
 }
